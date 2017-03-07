@@ -21,7 +21,6 @@ The goals / steps of this project are the following:
 [image6]: ./output_images/line_images/road_image_0.jpg "Road Image with Lines"
 [image7]: ./output_images/results_with_curv_info/info_image_1.jpg "Curvature and Position Info"
 [video1]: ./project_output.mp4 "Output Video"
-[video2]: ./project_output.mp4.zip "Output Video Compressed"
 
 ###Python file: project_hkawanishi_4.ipynb
 
@@ -70,7 +69,6 @@ Note: cell 9 is used to go through all the examples images, and for each image, 
 ###Pipeline (video)
 Once I was able to detect lines using still images (cell 9), I applied all these functions to a video image (project_video.mp4). Cells 11-14 are used to analyze a video.  Cell 10 import necessary functions, cell 11 is the pipeline, cell 12 contains the process_image function, and cell 13 specifies input/output video files.  My video output is:
 ![Output Video][video1]
-![Output Video Compressed][video2]
 
 
 ###Discussion
