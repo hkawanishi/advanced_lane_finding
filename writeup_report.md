@@ -14,13 +14,14 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./camera_cal/calibration1.jpg "Camera Imaged to be Calibrated"
-[image2]: ./output_images/calibration_camera_images/calibration_with_corners_1.jpg' "Chessboard with Corners"
+[image2]: ./output_images/calibration_camera_images/calibration_with_corners_1.jpg "Chessboard with Corners"
 [image3]: ./output_images/binary_images/binary_image_1.jpg "Binary Example"
 [image4]: ./output_images/warped_images/warped_image_1.jpg "Warp Example"
 [image5]: ./output_images/images_with_sliding_windows/windows_image_0.jpg "Fit Visual"
 [image6]: ./output_images/line_images/road_image_0.jpg "Road Image with Lines"
 [image7]: ./output_images/results_with_curv_info/info_image_1.jpg "Curvature and Position Info"
 [video1]: ./project_output.mp4 "Output Video"
+[video2]: ./project_output.mp4.zip "Output Video Compressed"
 
 ###Python file: project_hkawanishi_4.ipynb
 
@@ -29,7 +30,7 @@ The goals / steps of this project are the following:
 
 The code for this step is contained in the first, second, and third cells.  
 
-I started by preparing object points for the chessboard size 9x6. I used glob statement to go through all calibrate*jpg files in camera_cal directory.  The example of calibrate*.jpg is as follows:  
+I started by preparing object points for the chessboard size 9x6. I used glob statement to go through all calibrate jpg files in camera_cal directory.  The example of calibrate.jpg is as follows:  
 ![Camera Imaged to be Calibrated][image1]
 For each image, I used findChessBoardCorners to find corners and if the corners are found, stored in imgpoints array.  I rendered the detected chessboard corners using cv2.drawChessboardCorners. The example of the resulting image is:
 ![Chessboard with Corners][image2]
@@ -69,6 +70,7 @@ Note: cell 9 is used to go through all the examples images, and for each image, 
 ###Pipeline (video)
 Once I was able to detect lines using still images (cell 9), I applied all these functions to a video image (project_video.mp4). Cells 11-14 are used to analyze a video.  Cell 10 import necessary functions, cell 11 is the pipeline, cell 12 contains the process_image function, and cell 13 specifies input/output video files.  My video output is:
 ![Output Video][video1]
+![Output Video Compressed][video2]
 
 
 ###Discussion
@@ -79,6 +81,6 @@ My pipeline doesn't seem to work
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
-(1) My pipeline doesn't work well in challenge video.  The left and right lanes are "dancing" around in the video.  I think I needed to spend more time tweaking the corner paremeters when doing the perspective transformation.  I needed to invetigate more robost way to determine these four points. I wish I had more time.
-(2) I feel like there is a better way to do a color/gradient transformation.  I feel that I had a reasonable output using project_video.mp4, but I didn't do well in the challange video especially when there are some other cars in vicinity.  I need to work on filtering out those objects and implement a better method to detect the line.  
+* My pipeline doesn't work well in challenge video.  The left and right lanes are "dancing" around in the video.  I think I needed to spend more time tweaking the corner paremeters when doing the perspective transformation.  I needed to invetigate more robost way to determine these four points. I wish I had more time.
+* I feel like there is a better way to do a color/gradient transformation.  I feel that I had a reasonable output using project_video.mp4, but I didn't do well in the challange video especially when there are some other cars in vicinity.  I need to work on filtering out those objects and implement a better method to detect the line.  
 
