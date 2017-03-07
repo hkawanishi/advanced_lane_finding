@@ -1,5 +1,3 @@
----
-
 ##**Advanced Lane Finding Project**
 
 The goals / steps of this project are the following:
@@ -17,7 +15,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./camera_cal/calibration1.jpg "Camera Imaged to be Calibrated"
 [image2]: ./output_images/calibration_camera_images/calibration_with_corners_1.jpg' "Chessboard with Corners"
-[image3]: ./output_images/binary_images/binary_image_'1.jpg "Binary Example"
+[image3]: ./output_images/binary_images/binary_image_1.jpg "Binary Example"
 [image4]: ./output_images/warped_images/warped_image_1.jpg "Warp Example"
 [image5]: ./output_images/images_with_sliding_windows/windows_image_0.jpg "Fit Visual"
 [image6]: ./output_images/line_images/road_image_0.jpg "Road Image with Lines"
@@ -26,7 +24,6 @@ The goals / steps of this project are the following:
 
 ###Python file: project_hkawanishi_4.ipynb
 
----
 
 ###Camera Calibration
 
@@ -73,7 +70,6 @@ Note: cell 9 is used to go through all the examples images, and for each image, 
 Once I was able to detect lines using still images (cell 9), I applied all these functions to a video image (project_video.mp4). Cells 11-14 are used to analyze a video.  Cell 10 import necessary functions, cell 11 is the pipeline, cell 12 contains the process_image function, and cell 13 specifies input/output video files.  My video output is:
 ![Output Video][video1]
 
----
 
 ###Discussion
 
